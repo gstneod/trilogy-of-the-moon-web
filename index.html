@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilogy of the Moon: Eternal Rebirth | SKYPLUS</title>
+<meta name="description" content="천 년의 시간을 뛰어넘은 운명적 재회, Trilogy of the Moon: Eternal Rebirth 공식 홈페이지">
+<link rel="icon" href="assets/skyplus-logo.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#main" aria-label="홈으로">
+    <img src="assets/logo.png" alt="Trilogy of the Moon: Eternal Rebirth">
+  </a>
+  <nav class="site-nav">
+    <a href="#main">MAIN</a>
+    <a href="#story">STORY</a>
+    <a href="#features">FEATURES</a>
+  </nav>
+</header>
+
+<section id="main" class="hero">
+  <img src="assets/hero.jpg" alt="Trilogy of the Moon: Eternal Rebirth 대표 이미지">
+</section>
+
+<section id="story" class="section story-section">
+  <h2 class="section-title">STORY</h2>
+  <div class="story-card">
+    <h3>천 년의 시간을 뛰어넘은 운명적 재회!</h3>
+    <p>대한민국 최고의 포토그래퍼 하동훈.<br>
+    화려한 성공 뒤에 숨겨진 그의 비밀은 무엇일까?</p>
+    <p>어느 날 정체불명의 택배 하나가 그의 인생을 완전히 바꿔놓는다.<br>
+    갑자기 나타난 세 명의 신비로운 여인들<br>
+    그들은 천 년 전 바란국 왕궁의 후궁들이었다!</p>
+    <p class="emphasis">현대의 화보 모델로 환생한 세 후궁:<br>
+    숙원 - 현대에 금세 적응한 똑똑한 미녀<br>
+    해인 - 비밀스러운 매력의 소유자<br>
+    승아 - 우아한 기품을 지닌 귀인</p>
+    <p>하동훈은 사실 바란국 제4대 왕 하도우의 환생!<br>
+    잃어버린 기억 속 천년의 약속과 숨겨진 궁중 비밀들…</p>
+    <p>과연 그는 전생의 미스터리를 풀고 진정한 사랑을 되찾을 수 있을까?</p>
+  </div>
+</section>
+
+<section id="features" class="section features-section">
+  <h2 class="section-title">FEATURES</h2>
+  <div class="features-frame">
+    <img src="assets/features.jpg" alt="숙원, 해인, 승아 캐릭터 선택 화면">
+  </div>
+  <div class="features-caption">
+    <p>선택지를 선택하여 다양한 스토리를 즐길 수 있습니다.</p>
+    <p>적재적소의 선택지를 골라 매력적인 후궁을 만나보세요!</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <img class="footer-logo" src="assets/skyplus-logo.png" alt="SKYPLUS">
+  <div class="footer-links">
+    <a href="terms.html">이용약관</a>
+    <a href="privacy.html">개인정보 처리방침</a>
+  </div>
+  <p class="copyright">&copy; SKYPLUS All Rights Reserved.</p>
+</footer>
+
+<script>
+  const links = document.querySelectorAll('.site-nav a');
+  const sections = ['main', 'story', 'features'].map(id => document.getElementById(id));
+
+  const setActive = () => {
+    let current = sections[0].id;
+    const scrollPos = window.scrollY + 120;
+    sections.forEach(sec => {
+      if (sec.offsetTop <= scrollPos) current = sec.id;
+    });
+    links.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  };
+
+  window.addEventListener('scroll', setActive);
+  setActive();
+</script>
+
+</body>
+</html>
