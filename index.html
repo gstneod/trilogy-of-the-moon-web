@@ -71,17 +71,23 @@
   const sections = ['main', 'story', 'features'].map(id => document.getElementById(id));
 
   const setActive = () => {
+    const atBottom = window.scrollY + window.innerHeight >= document.body.scrollHeight - 2;
     let current = sections[0].id;
-    const scrollPos = window.scrollY + 120;
-    sections.forEach(sec => {
-      if (sec.offsetTop <= scrollPos) current = sec.id;
-    });
+    if (atBottom) {
+      current = sections[sections.length - 1].id;
+    } else {
+      const scrollPos = window.scrollY + 120;
+      sections.forEach(sec => {
+        if (sec.offsetTop <= scrollPos) current = sec.id;
+      });
+    }
     links.forEach(a => {
       a.classList.toggle('active', a.getAttribute('href') === '#' + current);
     });
   };
 
   window.addEventListener('scroll', setActive);
+  window.addEventListener('resize', setActive);
   setActive();
 </script>
 
