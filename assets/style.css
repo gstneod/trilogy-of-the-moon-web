@@ -193,6 +193,12 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto 1rem;
 }
 
+.footer-tagline {
+  font-size: 0.8rem;
+  color: #a9a9b0;
+  margin: 0 0 1rem;
+}
+
 .footer-links {
   display: flex;
   justify-content: center;
