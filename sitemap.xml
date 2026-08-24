@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sky-plus.co.kr/</loc>
+    <loc>https://www.sky-plus.co.kr/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sky-plus.co.kr/terms.html</loc>
+    <loc>https://www.sky-plus.co.kr/trilogy.html</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.sky-plus.co.kr/terms.html</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://sky-plus.co.kr/privacy.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.sky-plus.co.kr/privacy.html</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 </urlset>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sky-plus.co.kr/sitemap.xml
+Sitemap: https://www.sky-plus.co.kr/sitemap.xml

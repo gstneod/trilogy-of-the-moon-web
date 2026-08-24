@@ -425,6 +425,15 @@ a { color: inherit; text-decoration: none; }
 }
 .play-btn:hover { background: var(--cyan-deep); transform: translateY(-2px); }
 
+.play-btn-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.play-btn-alt {
+  background: #fff;
+  color: var(--ink);
+  border: 1.5px solid var(--border-soft);
+}
+.play-btn-alt:hover { background: #fff; border-color: var(--cyan); color: var(--cyan-deep); }
+
 /* ---------- 2026 lineup ---------- */
 .lineup-grid {
   display: grid;
@@ -500,6 +509,17 @@ a { color: inherit; text-decoration: none; }
 }
 .site-footer img { height: 26px; margin: 0 auto 0.8rem; }
 .site-footer p { font-size: 0.78rem; color: var(--ink-soft); margin: 0.2rem 0; }
+
+.site-footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.site-footer .footer-links a { color: var(--ink-soft); }
+.site-footer .footer-links a:hover { color: var(--cyan-deep); text-decoration: underline; }
 
 /* ---------- Back to top ---------- */
 .to-top {
